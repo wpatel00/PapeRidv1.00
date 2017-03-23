@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Location of manifest file written below -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wahajpatel.paperidv100">
+    <!--Getting Writing Permissions for SD Card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--Getting Reading Permissions for SD Card -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--Activity lines tell Android Studio file names and xml layouts (List of screens) that  are part of the app -->
+    <application
+        android:allowBackup="true"
+
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Screen2"></activity>
+        <activity android:name=".Redcapdictionary"></activity>
+    </application>
+
+</manifest>
